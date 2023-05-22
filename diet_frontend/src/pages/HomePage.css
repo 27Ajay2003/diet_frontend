@@ -1,0 +1,69 @@
+body {
+  overflow: hidden;
+}
+
+.home-page {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.home-page-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/home_logo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.home-page-content {
+  z-index: 1;
+  text-align: center;
+}
+
+.welcome-text {
+  font-size: 40px;
+  color: #212121;
+  margin-bottom: 10px;
+}
+
+.site-description {
+  font-size: 20px;
+  color: #424242;
+  margin-bottom: 20px;
+}
+
+.get-started-button {
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-top: 10px;
+  width: 200px;
+}
+
+@media (max-width: 768px) {
+  .welcome-text {
+    font-size: 32px;
+  }
+
+  .site-description {
+    font-size: 16px;
+  }
+
+  .get-started-button {
+    width: 160px;
+  }
+}
