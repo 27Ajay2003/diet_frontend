@@ -1,0 +1,106 @@
+.recipe-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f4ec;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .card-content {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .recipe-name {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #553d29;
+  }
+  
+  .time-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2e8dd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .time-container p {
+    margin: 8px 20px;
+    font-weight: bold;
+    color: #553d29;
+  }
+  
+  .ingredient-list {
+    list-style-type: disc;
+    margin-bottom: 20px;
+    color: #553d29;
+    text-align: left;
+  }
+
+  .maintitle{
+      color: black;
+  }
+  
+  .ingredient-list li {
+    margin-left: 20px;
+  }
+  
+  .instruction-list {
+    margin-bottom: 20px;
+    color: #553d29;
+    text-align: left;
+  }
+  
+  .instruction-list li {
+    margin-bottom: 10px;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    .recipe-card {
+      padding: 10px;
+    }
+  
+    .card-content {
+      padding: 20px;
+    }
+  
+    .recipe-name {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  
+    .time-container {
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+  
+    .time-container p {
+      margin: 4px 10px;
+    }
+  
+    .ingredient-list {
+      margin-bottom: 10px;
+    }
+  
+    .ingredient-list li {
+      margin-left: 10px;
+    }
+  
+    .instruction-list {
+      margin-bottom: 10px;
+    }
+  
+    .instruction-list li {
+      margin-bottom: 5px;
+    }
+  }
+  
