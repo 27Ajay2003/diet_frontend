@@ -77,7 +77,7 @@ const ResultPage = () => {
       };
 
       try {
-        const response = await fetch('http://127.0.0.1:8000/api/recipes/view/', {
+        const response = await fetch('https://diet-pro.onrender.com/recipes/view/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
