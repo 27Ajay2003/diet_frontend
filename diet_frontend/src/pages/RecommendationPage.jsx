@@ -99,10 +99,17 @@ const RecommendationsPage = () => {
   const isNextDisabled = currentDietIndex === totalDiets - 1;
   return (
     <div className="card-wrapper">
+      <div className='card_enclosed'>
       <div className="diet-card">
         <h1>Recommended Diets</h1>
         <div className="meal-container">{renderMeals()}</div>
-      </div>
+      </div> </div>
+      <button
+        className="nutritional-analysis-button"
+        onClick={handleShowNutrition}
+      >
+        Nutritional Analysis
+      </button>
       <div className="pagination-buttons">
         <button
           className="prev-button"
@@ -119,12 +126,12 @@ const RecommendationsPage = () => {
           Next
         </button>
       </div>
-      <button
+      {/* <button
         className="nutritional-analysis-button"
         onClick={handleShowNutrition}
       >
         Nutritional Analysis
-      </button>
+      </button> */}
     </div>
   );
   

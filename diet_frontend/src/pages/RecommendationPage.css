@@ -7,7 +7,13 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex-direction: column;
 }
+
+/* .card_enclosed{
+  overflow-y: scroll;
+
+} */
 
 .diet-card {
   border: 1px solid #ccc;
@@ -128,7 +134,7 @@ p {
   cursor: pointer;
   font-size: 14px;
   transition: background-color 0.3s ease;
-  position: absolute;
+  /* position: absolute; */
   right: 20px;
   bottom: 70px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
@@ -139,10 +145,11 @@ p {
 }
 
 .pagination-buttons {
-  position: absolute;
-  left: 50%;
+  /* position: absolute; */
+  /* left: 50%;
   transform: translateX(-50%);
-  bottom: 20px;
+  bottom: 20px; */
+  margin-top: 5em;
 }
 
 .prev-button {
@@ -183,5 +190,9 @@ p {
 @media screen and (max-width: 768px) {
   .meal-card {
     flex: 1 1 100%;
+  }
+  .card_enclosed{
+    overflow-y: scroll;
+  
   }
 }
