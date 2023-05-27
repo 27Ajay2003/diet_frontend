@@ -5,6 +5,7 @@ import './RecommendationPage.css'; // Import CSS file for styling
 const RecommendationsPage = () => {
   const location = useLocation();
   const dataf = location.state;
+  console.log(dataf)
   const data = JSON.parse(dataf);
   const navigate = useNavigate();
 
